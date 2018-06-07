@@ -5,7 +5,7 @@ Fetch OCR'd shopping bills from GDrive and get interesting information
 
 ## The plan
 
-With this program you will be able to fetch documents from Google Drive that contain OCR text from an image that was taken by your smartphone.\
+With this program you will be able to fetch documents from Google Drive that contain OCR text from an image that was taken by your smartphone.
 
 #### Currently the best way I found is to:
 ##### With the Keep App
