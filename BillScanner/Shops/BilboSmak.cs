@@ -7,7 +7,7 @@ namespace BillScanner.Shops {
 
 		}
 
-		public override void Parse(string bill) {
+		public override void Parse(string[] bill) {
 
 		}
 

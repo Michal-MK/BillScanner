@@ -43,18 +43,21 @@ namespace BillScanner {
 
 			Console.WriteLine("Files to download ({0}):", files.Count);
 
-			if(files.Count == 0) {
+			if (files.Count == 0) {
 				Console.WriteLine("No Files found in the drive!");
 				End();
 				return;
 			}
 
+			ShopsDefinition def = new ShopsDefinition();
+
 			foreach (Google.Apis.Drive.v3.Data.File file in files) {
 				Console.WriteLine("{0} ({1})", file.Name, file.Id);
 				if (file.Name.Contains("Google") || file.Name.Contains("Keep")) {
 					Stream fs;
+					string fileName = billPath + file.Name + "-" + file.Id.Replace("-", "") + ".txt";
 					try {
-						fs = new FileStream(billPath + file.Name + "-" + file.Id.Replace("-", "") + ".txt", FileMode.CreateNew);
+						fs = new FileStream(fileName, FileMode.CreateNew);
 					}
 					catch (IOException e) {
 						Console.WriteLine(e.Message);
@@ -64,6 +67,30 @@ namespace BillScanner {
 					fs.Close();
 					fs.Dispose();
 					//TODO delete file from drive
+					string content = File.ReadAllText(fileName);
+					ShopsDefinition.Shop shop = def.GetShopType(content);
+					switch (shop) {
+						case ShopsDefinition.Shop.LIDL: {
+							Shops.Lidl l = new Shops.Lidl();
+							l.Parse(content);
+							break;
+						}
+						case ShopsDefinition.Shop.MC_DONALDS: {
+							Shops.McDonalds m = new Shops.McDonalds();
+							m.Parse(content);
+							break;
+						}
+						case ShopsDefinition.Shop.ŠMAK: {
+							Shops.BilboSmak bs = new Shops.BilboSmak();
+							bs.Parse(content);
+							break;
+						}
+						case ShopsDefinition.Shop.ALBERT: {
+							Shops.Albert a = new Shops.Albert();
+							a.Parse(content);
+							break;
+						}
+					}
 				}
 			}
 			End();

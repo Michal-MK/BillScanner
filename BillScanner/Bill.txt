@@ -1,0 +1,128 @@
+﻿LİDL JEDNOM MÍSTĚ
+VSE NA
+Lidl Ceskà republika v.o.s
+Narożní 1359/11, 158 00, Praha 5
+IC: 26178541, DIC: CZ26178541
+MS Praha,n A/42824, Provozovna
+Brno, Dornych
+Pizza kapsa
+Kč
+9,90 B
+1 x 9,90
+Cesneková bageta
+1 x 14,90
+Kč
+14,90 B
+Ko
+SUMA
+2Poz
+24,80
+zaokrouhleno
+0,20
+k platbé
+25,00
+Hotovost Kc
+Zpet
+50,00
+25,00
+B 15% DPH z
+25,00
+3,26
+05.04.18 16:16:27
+0416 160975/014/03
+
+
+Baierova, s.r.o
+Hlavni 88, 624 00 Brno
+ICO: 47904534, DIC: CZ47904534
+McDonald's Vankovka (68)
+DOKLAD
+DIC: CZ16191129
+DIC poverujiciho pop1. CZ47904534
+Cislo uctenky: 2018060406803-00433
+Cislo provozovny: 861
+Cislo pokladny: 03
+Datum, cas: 04.06.2018, 19:36:17
+Bezny rezim
+TOTAL
+85.00 B
+QTY ITEM
+1 CRISPY CHIC.WR
+S sebou celkem (vc DPH)
+CZK
+85.00
+100.00
+15.00
+due
+VAT Number
+TAX B (15.00%)
+BKP:
+TAX AMOUNT TAX
+85.00=
+11.09
+
+
+
+BILBO šmak s.r.o.
+S. K. Neumanna 1089, 434 01 Most
+IC: 25025228, DIč: CZ25025228
+Galerie Vaňkovka, Ve Vaňkovce 1, 602 00 Brno
+Datum:3.4.2018 16:50:34 Obsluha: Nada
+číslo dokladu: 295
+Smaž. řízek, bram. kaše
+EET: 1 1,085,00 DPH: B 85,00
+Celkem k úhradě:
+85,00 Kč
+SAZBA ZAKLAD DPH CELKEM
+73,91 11,09 85,00
+B 15%
+EET rekapitulace:
+Provozouna č.: 71 Pokladna č.: 2 DIC: C225025228
+Režim EET:běžný
+TD: 1 FIK: 037b433c-d4c0-4988-a23a-b66365fc8884-04
+ID: 1 BKP: fe3f4989-20bd49a4-b2b5825e-69d31b37-ffc5fdbd
+Rozpis DPH pra certifikát 1:
+15% 73,91 11,09 85,00
+85,00 Kč
+Kč
+častka vrátit: 0
+častka doplatit: 85Kč
+
+albert
+HYPERMARKET 819
+Ve Vańkovce 1
+602 00 Brno
+AHOLD Czech Republic a.s.
+Radlická 520/117, 158 00 Praha 5
+ICO: 44012373, DIć: CZ44012373
+Spol. vedená v 0R u Měs v Praze,
+oddil B, vlożka 19737
+KČ
+59,90 A
+0,10 A
+KURECI STRIPSY 240G
+ZAOKROUHLENI PRIJEM
+Celkem
+Koruna česká
+60,00
+500,00
+440,00
+Kč
+Vrátit
+Základ DPH
+52,18
+Výše DPH
+7,82
+Kod Sazba
+15, 00%
+ID učtu: 08191806050058522
+Provozovna: 2201 čas: 14:30:16
+Pok l adna: POS-5
+Irzba je evi dovana v béznem reżimu
+FIK:
+29f8c5a2-6e69-4dc0-889b-a37b9b434557-04
+BKP: CF382168-7AB97CD7-F5A5581S
+-DO9C7DEC-DAOBE59D
+Datum čas Obch Pok1 Obsl Trans
+05.06. 18 14:30 0819 05 1024 0078522
+

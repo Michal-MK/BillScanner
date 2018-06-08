@@ -1,11 +1,14 @@
 ﻿using OfficeOpenXml;
 using System;
 using System.Collections.Generic;
+using System.Text.RegularExpressions;
 
 namespace BillScanner.Shops {
 	public class ShopsBase {
 
 		protected string shop_name;
+
+		public Regex dateRegEx { get; set; } = new Regex(@"\d+\.\d+\.\ ?\d+\ ?\,?\ ?\,?\d+:\d+:?(\d+)?");
 
 		protected ShopsBase(string shop_name) {
 			this.shop_name = shop_name;
@@ -15,7 +18,7 @@ namespace BillScanner.Shops {
 			Console.WriteLine("Writing out to " + shop_name);
 		}
 
-		public virtual void Parse(string) {
+		public virtual void Parse(string[] bill) {
 			Console.WriteLine("Parsing as " + shop_name);
 		}
 	}

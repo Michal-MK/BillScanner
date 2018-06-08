@@ -1,5 +1,6 @@
 # BillScanner
-**WARNING: This is WIP, not ready for use!**
+**Project put on hold because no OCR was capable of parsing bills with at least 75% success rate...**
+
 
 Fetch OCR'd shopping bills from GDrive and get interesting information
 
