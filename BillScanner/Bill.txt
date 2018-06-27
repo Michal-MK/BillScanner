@@ -1,128 +1,85 @@
-﻿LİDL JEDNOM MÍSTĚ
-VSE NA
-Lidl Ceskà republika v.o.s
-Narożní 1359/11, 158 00, Praha 5
-IC: 26178541, DIC: CZ26178541
-MS Praha,n A/42824, Provozovna
-Brno, Dornych
-Pizza kapsa
-Kč
-9,90 B
-1 x 9,90
-Cesneková bageta
-1 x 14,90
-Kč
-14,90 B
-Ko
-SUMA
-2Poz
-24,80
-zaokrouhleno
-0,20
-k platbé
-25,00
-Hotovost Kc
-Zpet
-50,00
-25,00
-B 15% DPH z
-25,00
-3,26
-05.04.18 16:16:27
-0416 160975/014/03
+﻿albžrt
 
+HVPERMARKET 819
+Ve Vaňkovce 1
+602 00 Brno
 
-Baierova, s.r.o
-Hlavni 88, 624 00 Brno
-ICO: 47904534, DIC: CZ47904534
-McDonald's Vankovka (68)
-DOKLAD
-DIC: CZ16191129
-DIC poverujiciho pop1. CZ47904534
-Cislo uctenky: 2018060406803-00433
-Cislo provozovny: 861
-Cislo pokladny: 03
-Datum, cas: 04.06.2018, 19:36:17
-Bezny rezim
-TOTAL
-85.00 B
-QTY ITEM
-1 CRISPY CHIC.WR
-S sebou celkem (vc DPH)
-CZK
-85.00
-100.00
-15.00
-due
-VAT Number
-TAX B (15.00%)
-BKP:
-TAX AMOUNT TAX
-85.00=
-11.09
+AHOLD Czech Republic a„51
+Rad1lcka 520/117; 158 00 Praha 5
+ICO: 44012373, DIC: 0244012373
+Spal„ vedena v GR 0 MéS v Praze,
+oddíl B, v]oZka 1973?
 
+KUŘECI STŘÍPSY 2400 59,90 A
+ŘOHLÍKQBGŘ
 
+5 x 1,90 Kč 9„50 A
+KOFOLA CITRU$ 2L 17,90 A
+C.BUCH.NAPL.POVID.BA 32,00 A
+ZAOKROUHLENI VYDEJ “0,20 A
+Ce1kem 120 00
+Řgruna česká Kč 500,00
+Vrátit Kč 380,00
 
-BILBO šmak s.r.o.
-S. K. Neumanna 1089, 434 01 Most
-IC: 25025228, DIč: CZ25025228
-Galerie Vaňkovka, Ve Vaňkovce 1, 602 00 Brno
-Datum:3.4.2018 16:50:34 Obsluha: Nada
-číslo dokladu: 295
-Smaž. řízek, bram. kaše
-EET: 1 1,085,00 DPH: B 85,00
-Celkem k úhradě:
-85,00 Kč
-SAZBA ZAKLAD DPH CELKEM
-73,91 11,09 85,00
-B 15%
-EET rekapitulace:
-Provozouna č.: 71 Pokladna č.: 2 DIC: C225025228
-Režim EET:běžný
-TD: 1 FIK: 037b433c-d4c0-4988-a23a-b66365fc8884-04
-ID: 1 BKP: fe3f4989-20bd49a4-b2b5825e-69d31b37-ffc5fdbd
-Rozpis DPH pra certifikát 1:
-15% 73,91 11,09 85,00
-85,00 Kč
-Kč
-častka vrátit: 0
-častka doplatit: 85Kč
+kód Sazba Základ DPH Výše DPH
+A 15,00% 104,35 15,55
 
-albert
-HYPERMARKET 819
-Ve Vańkovce 1
-602 00 Brno
-AHOLD Czech Republic a.s.
-Radlická 520/117, 158 00 Praha 5
-ICO: 44012373, DIć: CZ44012373
-Spol. vedená v 0R u Měs v Praze,
-oddil B, vlożka 19737
-KČ
-59,90 A
-0,10 A
-KURECI STRIPSY 240G
-ZAOKROUHLENI PRIJEM
-Celkem
-Koruna česká
-60,00
-500,00
-440,00
-Kč
-Vrátit
-Základ DPH
-52,18
-Výše DPH
-7,82
-Kod Sazba
-15, 00%
-ID učtu: 08191806050058522
-Provozovna: 2201 čas: 14:30:16
-Pok l adna: POS-5
-Irzba je evi dovana v béznem reżimu
-FIK:
-29f8c5a2-6e69-4dc0-889b-a37b9b434557-04
-BKP: CF382168-7AB97CD7-F5A5581S
--DO9C7DEC-DAOBE59D
-Datum čas Obch Pok1 Obsl Trans
-05.06. 18 14:30 0819 05 1024 0078522
+10 metu; Unia;6032Ú0039046
 
+Tržba je evidovah ?ném reZímu
+. průvozovna: 2201 4 18:1?:21albžrt
+
+HYPERMARKET 819
+Ve Vaňkovce 1
+602 00 Brno
+
+AHOLD Czech Republic a.s.
+Radlická 520/117, 158 00 Praha 5
+ICQ: 44012373, DIČ: CZ44012373
+Spol. vedena v OR u MěS v Praze,
+oddíl B, vložka 19737
+
+Kč
+KUŘECI STRIPSY 2400 59,90 A
+ROHLIK43GR
+5 x 1,90 Kc 9,50 A
+KOFOLA CITRUS 2L 17,90 A
+C. BUCH. NAPL POVID. BA 32,90 A
+- ZAOKROUHLENI VÝDEJ —0,20 A
+Celkem 120,00
+Koruna česká Kč 500,00
+Vrátit Kč 380,00
+
+———mu*—._-m...—...-..——-_.—_.—___—__———-—-—..—>a— --.-...——_-.
+
+Kod Sazba Základ DPH Výše DPH
+A 15,00% 104,35 15, 65
+
+10 UCIU: 08191803200039046'
+
+Tržba Je evídovan Pněm režimu
+“ Provozovna; 2201 1 18:17:21
+
+FIK:
+
+' a1f0d169—9294—4418—9074—7d7a3f411181—06
+BKP: 2201A257—608ECDF6—1A990692
+
+' —3508C302—73F97326
+
+' Datum Čas Obch Pokl Obsl Trans
+20.03.18 18:17 0819 03 1069 0049046
+' Obsluhoval<a> vas: Petra Novotna
+
+Děkujeme za Vaši návštěvu
+a těšíme se na shledanou.
+Potvrzena účtenka do 10. 000, Kc muze
+sloužit jako daňový doklad. Uschovejte
+po dobu zaruky zakoupeného zboží!
+BeZplatna línka pro Vaše připomínky
+a dotazy: 800 402 402.
+
+Legenda zpusobu vážení položek:
+MM — Ruční zadaní
+MP — Váženo na pokladně
+ME - Váženo etiketovací vahou"DDKLAD\n\nDIC: CZ16191120\n\nDIC poveruj101ho 0001.: Uld/004534\n01310 uctenky: 2018000400003 00433\n01810 provozovny: 061\n\n01510 00k1adny: 00\n\nDatum, 000: 04.00.7010, 10:10:17\nBezny razim\n\n  \n   \n  \n  \n  \n \n  \n  \n \n \n  \n     \n\nÚTY ITEM TOTAL\n1 CRISPY CHIC.WR 85.00 B\nS sebou ce1kem (vc DPH) 85.00 „;'Ýg\nCZK 100.00 “' ' “\ndue 15.00\nVAT Number\n\nTAX% AMUUNT TAX\nTAX B (15.00%) 85.00 = 11.09\n\nBKP:\nBCB1E013 058271009 350420„\n\nF2\n\nFIK:\n\n40653318 0900 4508 801\n*****1*****1**$**0**$_\n\nChceme znat vas nazoš\nVyp1nte, prosi m, 00\nwww. mcnazor. cz *\n\nZadejte kod. abfff\n**********$*0„ »\n\n"

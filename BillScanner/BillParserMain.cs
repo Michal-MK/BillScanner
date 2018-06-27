@@ -7,20 +7,31 @@ using System.Collections.Generic;
 using System.IO;
 using System.Threading;
 using System.Linq;
+using System.Windows.Forms;
+using Tesseract;
 
 namespace BillScanner {
 	static class BillParserMain {
 		private static string folderPath { get; } = Directory.GetCurrentDirectory() + Path.DirectorySeparatorChar;
 		private static string billPath { get; } = folderPath + "Bills" + Path.DirectorySeparatorChar;
 
+		[STAThread]
 		static void Main(string[] args) {
 
 			if (!Directory.Exists(billPath)) {
 				Directory.CreateDirectory(billPath);
 			}
 
-			UserCredential credential;
+			TesseractEngine engine = new TesseractEngine(Directory.GetCurrentDirectory(), "ces");
 
+			Pix img = Pix.LoadFromFile(@"C:\Users\Michal\Desktop\unnamed1.jpg");
+
+			Page p = engine.Process(img, PageSegMode.Auto);
+			string s = p.GetText();
+			Console.WriteLine("Hello");
+
+			UserCredential credential;
+			
 			using (FileStream stream = new FileStream("client_secret.json", FileMode.Open, FileAccess.Read)) {
 				credential = GoogleWebAuthorizationBroker.AuthorizeAsync(
 					GoogleClientSecrets.Load(stream).Secrets,
@@ -72,22 +83,22 @@ namespace BillScanner {
 					switch (shop) {
 						case ShopsDefinition.Shop.LIDL: {
 							Shops.Lidl l = new Shops.Lidl();
-							l.Parse(content);
+							//l.Parse(content);
 							break;
 						}
 						case ShopsDefinition.Shop.MC_DONALDS: {
 							Shops.McDonalds m = new Shops.McDonalds();
-							m.Parse(content);
+							//m.Parse(content);
 							break;
 						}
 						case ShopsDefinition.Shop.ŠMAK: {
 							Shops.BilboSmak bs = new Shops.BilboSmak();
-							bs.Parse(content);
+							//bs.Parse(content);
 							break;
 						}
 						case ShopsDefinition.Shop.ALBERT: {
 							Shops.Albert a = new Shops.Albert();
-							a.Parse(content);
+							//a.Parse(content);
 							break;
 						}
 					}
