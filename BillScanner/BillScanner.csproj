@@ -86,6 +86,7 @@
     <Compile Include="Shops\McDonalds.cs" />
     <Compile Include="Shops\ShopsBase.cs" />
     <Compile Include="StringUnifier.cs" />
+    <Compile Include="TCP Server.cs" />
     <Compile Include="WordSimilarity.cs" />
   </ItemGroup>
   <ItemGroup>
