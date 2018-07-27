@@ -1,9 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27703.2000
-MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{4F3A5E87-612D-CE0A-AB7E-E615FD352A9B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BillScanner", "Assembly-CSharp.csproj", "{4F3A5E87-612D-CE0A-AB7E-E615FD352A9B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -18,8 +16,5 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {9980E53E-F7A3-4065-86F0-1C310ECABAD2}
 	EndGlobalSection
 EndGlobal

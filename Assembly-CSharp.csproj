@@ -10,7 +10,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace>
     </RootNamespace>
-    <ProjectGuid>{A88070E9-6B82-C577-7A3C-5A5C26B413E4}</ProjectGuid>
+    <ProjectGuid>{4F3A5E87-612D-CE0A-AB7E-E615FD352A9B}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -61,12 +61,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\ButtonBehaviour.cs" />
+    <Compile Include="Assets\ConnectionManager.cs" />
     <Compile Include="Assets\Main.cs" />
-    <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>D:/BillScanner Unity/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEditor.StandardEvents">
-      <HintPath>D:/BillScanner Unity/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+      <HintPath>D:/BillScanner/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.PackageManagerUI.Editor">
+      <HintPath>D:/BillScanner/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>D:/UnityDK/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
