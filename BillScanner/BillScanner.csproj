@@ -8,9 +8,11 @@
     <OutputType>Exe</OutputType>
     <RootNamespace>BillScanner</RootNamespace>
     <AssemblyName>BillScanner</AssemblyName>
-    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -21,6 +23,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -30,6 +33,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="EPPlus, Version=4.5.2.1, Culture=neutral, PublicKeyToken=ea159fdaa78159a1, processorArchitecture=MSIL">
@@ -78,6 +82,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BillParserMain.cs" />
+    <Compile Include="CustomBinder.cs" />
     <Compile Include="ShopsDefinition.cs" />
     <Compile Include="Shops\Albert.cs" />
     <Compile Include="Shops\BilboSmak.cs" />
@@ -86,7 +91,8 @@
     <Compile Include="Shops\McDonalds.cs" />
     <Compile Include="Shops\ShopsBase.cs" />
     <Compile Include="StringUnifier.cs" />
-    <Compile Include="TCP Server.cs" />
+    <Compile Include="TCPData.cs" />
+    <Compile Include="TCPServer.cs" />
     <Compile Include="WordSimilarity.cs" />
   </ItemGroup>
   <ItemGroup>

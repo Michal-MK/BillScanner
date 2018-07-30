@@ -18,6 +18,12 @@ namespace BillScanner {
 		[STAThread]
 		static void Main(string[] args) {
 
+			TCPServer server = new TCPServer();
+			server.Start();
+			Console.ReadLine();
+			return;
+
+
 			if (!Directory.Exists(billPath)) {
 				Directory.CreateDirectory(billPath);
 			}
