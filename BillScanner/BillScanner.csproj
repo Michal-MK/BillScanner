@@ -82,7 +82,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BillParserMain.cs" />
-    <Compile Include="CustomBinder.cs" />
+    <Compile Include="MyBinder.cs" />
     <Compile Include="ShopsDefinition.cs" />
     <Compile Include="Shops\Albert.cs" />
     <Compile Include="Shops\BilboSmak.cs" />

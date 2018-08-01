@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 [Serializable, StructLayout(LayoutKind.Sequential)]
 public struct TCPData {
 	public TCPData(List<Item> items) {
-		this.items = items;
+		this.items = items.ToArray();
 	}
 
-	public List<Item> items { get; }
+	public Item[] items { get; }
 }
-
+[Serializable]
 public struct Item {
 	public Item(string name, int amount) {
 		this.name = name;
@@ -20,12 +20,12 @@ public struct Item {
 	public string name { get; }
 	public int amount { get; }
 }
-
+[Serializable]
 public struct ItemMeta {
 	public ItemMeta(Item item) {
 		this.item = item;
 	}
-	//Other Metadata
+
 	public Item item;
 }
 

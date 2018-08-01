@@ -18,11 +18,11 @@ namespace BillScanner {
 		[STAThread]
 		static void Main(string[] args) {
 
-			TCPServer server = new TCPServer();
+			TCPServer<TCPData> server = new TCPServer<TCPData>();
 			server.Start();
+			server.OnDataReceived += Server_OnDataReceived;
 			Console.ReadLine();
 			return;
-
 
 			if (!Directory.Exists(billPath)) {
 				Directory.CreateDirectory(billPath);
@@ -30,11 +30,13 @@ namespace BillScanner {
 
 			TesseractEngine engine = new TesseractEngine(Directory.GetCurrentDirectory(), "ces");
 
-			Pix img = Pix.LoadFromFile(@"C:\Users\Michal\Desktop\unnamed1.jpg");
+			Pix img = Pix.LoadFromFile("unnamed1.jpg");
 
 			Page p = engine.Process(img, PageSegMode.Auto);
 			string s = p.GetText();
-			Console.WriteLine("Hello");
+			Console.WriteLine(s);
+
+			Console.ReadLine();
 
 			UserCredential credential;
 			
@@ -111,6 +113,15 @@ namespace BillScanner {
 				}
 			}
 			End();
+		}
+
+		private static void Server_OnDataReceived(object sender, TCPData e) {
+			Console.WriteLine(e.items.Length);
+			if (e.items.Length > 0) {
+				foreach (Item i in e.items) {
+					Console.WriteLine(i.name + " " + i.amount);
+				}
+			}
 		}
 
 		private static void End() {
