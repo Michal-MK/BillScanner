@@ -1,0 +1,21 @@
+﻿{
+    "entries": 0,
+    "modified": null,
+    "entryArray": [
+        {
+            "pricesInThePast": [ "101", "102" ],
+            "latestPrice": "100",
+            "fullName": "Cake",
+            "weight": 48,
+            "metrics": "grams"
+
+        },
+        {
+            "pricesInThePast": [ "1000", "2000", "33333" ],
+            "latestPrice": "1500",
+            "fullName": "Bread",
+            "weight": 48,
+            "metrics": "grams"
+        }
+    ]
+}

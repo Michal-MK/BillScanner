@@ -1,32 +1,44 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Net;
-using System.Net.Sockets;
-using UnityEngine;
-using UnityEngine.UI;
-using System.Threading;
+﻿using UnityEngine;
+using System.IO;
+using Igor.Enums;
 
 public class Main : MonoBehaviour {
 
-	public enum MeassurementUnit {
-		PIECES,
-		WEIGHT,
-		LITRES
+	public static Main script { get; set; }
+
+	public ShopsScene shopsScene;
+	public Shops shops;
+
+	private void Awake() {
+		if (script == null) {
+			script = this;
+			DontDestroyOnLoad(gameObject);
+		}
+		else if (script != this) {
+			Destroy(gameObject);
+		}
 	}
 
-	public static Text getText { get; private set; }
-	public ConnectionManager conn;
+	private void Start() {
+		FileInfo file = new FileInfo(Application.persistentDataPath + Path.DirectorySeparatorChar + "config.json");
+		DirectoryInfo dirShops = new DirectoryInfo(Application.persistentDataPath + Path.DirectorySeparatorChar + "Shops");
+		DirectoryInfo dirStash = new DirectoryInfo(Application.persistentDataPath + Path.DirectorySeparatorChar + "Stash");
+		if (!file.Exists) {
+			File.WriteAllText(file.FullName, Resources.Load<TextAsset>("config").text);
+		}
+		if (!dirShops.Exists) {
+			Directory.CreateDirectory(dirShops.FullName);
+		}
 
-	// Use this for initialization
-	void Start () {
-		getText = transform.Find("Text").GetComponent<Text>();
-		conn = new ConnectionManager();
-		conn.prefab = Resources.Load<GameObject>("ConnInfo");
-		conn.ConnectInfo();
+		if (!dirStash.Exists) {
+			Directory.CreateDirectory(dirStash.FullName);
+		}
+		shops = new Shops(dirShops.FullName);
 	}
 
-	public void Send() {
-		conn.SendData();
+	private void OnDestroy() {
+		if (script == this) {
+			script = null;
+		}
 	}
 }

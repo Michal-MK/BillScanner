@@ -5,12 +5,14 @@ Bills
 Library
 Build
 Temp
+Unity-Logs-Viewer
 
 # User-specific files
 *.suo
 *.user
 *.userosscache
 *.sln.docstates
+*.mdb
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs

@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BillScanner", "Assembly-CSharp.csproj", "{4F3A5E87-612D-CE0A-AB7E-E615FD352A9B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BillScanner", "Assembly-CSharp-Editor.csproj", "{6EC18C57-6479-E209-7D9F-BF134A1D442A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +15,10 @@ Global
 		{4F3A5E87-612D-CE0A-AB7E-E615FD352A9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4F3A5E87-612D-CE0A-AB7E-E615FD352A9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4F3A5E87-612D-CE0A-AB7E-E615FD352A9B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6EC18C57-6479-E209-7D9F-BF134A1D442A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6EC18C57-6479-E209-7D9F-BF134A1D442A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6EC18C57-6479-E209-7D9F-BF134A1D442A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6EC18C57-6479-E209-7D9F-BF134A1D442A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
