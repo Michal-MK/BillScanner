@@ -1,3 +1,6 @@
+# IMPORTANT!
+This repository is superceeded by BillScanner_WPF and BillScanner_Android
+
 # BillScanner
 **Project put on hold because no OCR was capable of parsing bills with at least 75% success rate...**
 
