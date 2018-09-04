@@ -8,9 +8,19 @@ public class EditorSceneLoader : ScriptableObject {
 		EditorSceneManager.SaveCurrentModifiedScenesIfUserWantsTo();
 		EditorSceneManager.OpenScene("Assets/Scenes/" + "Menu" + ".unity", OpenSceneMode.Single);
 	}
-	[MenuItem("Scenes/Swtich to GameScene _F6")]
-	static void Game() {
+	[MenuItem("Scenes/Swtich to ShopsScene _F6")]
+	static void Purchase() {
 		EditorSceneManager.SaveCurrentModifiedScenesIfUserWantsTo();
 		EditorSceneManager.OpenScene("Assets/Scenes/" + "Shops" + ".unity", OpenSceneMode.Single);
+	}
+	[MenuItem("Scenes/Swtich to ShopManagement _F7")]
+	static void Management() {
+		EditorSceneManager.SaveCurrentModifiedScenesIfUserWantsTo();
+		EditorSceneManager.OpenScene("Assets/Scenes/" + "ShopManagement" + ".unity", OpenSceneMode.Single);
+	}
+	[MenuItem("Scenes/Swtich to Shoot _F8")]
+	static void shoot() {
+		EditorSceneManager.SaveCurrentModifiedScenesIfUserWantsTo();
+		EditorSceneManager.OpenScene("Assets/Scenes/" + "ScreenShots" + ".unity", OpenSceneMode.Single);
 	}
 }

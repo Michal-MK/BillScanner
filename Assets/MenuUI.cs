@@ -16,34 +16,33 @@ public class MenuUI : MonoBehaviour {
 
 	public Transform shopList;
 
-	private bool isOnline;
-
+	private FileInfo[] stashedData;
 
 	 void Start () {
-		ConnectionChecker.instance.thread.OnConnectedStatusUpdate += OnConnectionUpdate;
+		ConnectionChecker.instance.OnConnectionChange += OnConnectionUpdate;
 		textLog = GameObject.Find("_TextLog").GetComponent<Text>();
 		stashInfoDir = new DirectoryInfo(Application.persistentDataPath + "/Stash/");
-		FileInfo[] data = stashInfoDir.GetFiles("*.data");
-		if(data.Length > 0) {
-			stashInfo.text = string.Format("Found {0} items in stash!", data.Length);
+		stashedData = stashInfoDir.GetFiles("*.data");
+		if(stashedData.Length > 0) {
+			stashInfo.text = string.Format("Found {0} items in stash!", stashedData.Length);
 		}
 		else {
 			stashInfo.text = "Stash is empty!";
 		}
 
 		PopulateShops();
-		if (isOnline && data.Length > 0) {
+
+	}
+
+	private void OnConnectionUpdate(object sender, bool isOnline) {
+		if (isOnline && stashedData.Length > 0) {
 			stashResolveBtn.interactable = true;
 		}
 	}
 
-	private void OnConnectionUpdate(object sender, bool e) {
-		isOnline = e;
-	}
-
 	public void SendStashed() {
 		BinaryFormatter bf = new BinaryFormatter();
-		foreach (FileInfo file in stashInfoDir.GetFiles("*.data")) {
+		foreach (FileInfo file in stashInfoDir.GetFiles("*.stashedData")) {
 			using(FileStream fs = File.OpenRead(file.FullName)) {
 				TCPData data = (TCPData)bf.Deserialize(fs);
 				Main.script.shopsScene.conn.SendData(data);

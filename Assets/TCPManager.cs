@@ -1,15 +1,14 @@
 ﻿using Igor.TCP;
-using System;
 using System.Collections.Generic;
-
+using UnityEngine;
 
 public class TCPManager {
 	private readonly Dictionary<string, Item> items;
+	public static PurchaseMeta? currentMeta;
 
 	public TCPManager() {
 		items = new Dictionary<string, Item>();
 	}
-
 
 	public void Add(Item i) {
 		items.Add(i.name, i);
@@ -24,6 +23,12 @@ public class TCPManager {
 	}
 
 	public TCPData GetCurrentData() {
-		return new TCPData(new List<Item>(items.Values));
+		if (!currentMeta.HasValue) {
+			Debug.Log("Purchase information are not filled in!");
+			return default(TCPData);
+		}
+		return new TCPData(new List<Item>(items.Values),currentMeta.Value);
 	}
+
+	public int getItemAmount { get { return items.Count; } }
 }

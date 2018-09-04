@@ -176,7 +176,7 @@ GameObject:
   - component: {fileID: 224335682737535676}
   - component: {fileID: 222432310824787158}
   - component: {fileID: 114583341281212678}
-  - component: {fileID: 114959110478532968}
+  - component: {fileID: 114484733002812026}
   m_Layer: 5
   m_Name: ConnInfo
   m_TagString: Untagged
@@ -301,8 +301,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114959110478532968}
-        m_MethodName: Parse
+      - m_Target: {fileID: 114484733002812026}
+        m_MethodName: Connect
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -451,6 +451,17 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &114484733002812026
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1614044322281424}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c588eee28c68830428d91cbc2430cc6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114583341281212678
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -640,17 +651,6 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: 'Host IP address:'
---- !u!114 &114959110478532968
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1614044322281424}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 74b10ba2dce0e744cb4cc4036ad97287, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &114966210444935896
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -737,7 +737,7 @@ MonoBehaviour:
   m_CaretColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
   m_CustomCaretColor: 0
   m_SelectionColor: {r: 0.65882355, g: 0.80784315, b: 1, a: 0.7529412}
-  m_Text: 192.168.0.102
+  m_Text: 127.0.0.1
   m_CaretBlinkRate: 0.85
   m_CaretWidth: 1
   m_ReadOnly: 0

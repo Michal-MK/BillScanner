@@ -8,5 +8,9 @@ public class ItemMeta {
 
 	public Item item { get; }
 	public ShopItem parsed { get; }
+
+	public void RemoveSelf(int position) {
+		ShopsScene.script.parser.RemoveItem(position);
+	}
 }
 

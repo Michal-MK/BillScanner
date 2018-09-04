@@ -10,11 +10,15 @@ public class ButtonBehaviour : MonoBehaviour {
 	public Button removeItem;
 	public Text itemName;
 
+	public int parsedArrayPosition;
 	public MeassurementUnit unit;
-
 	public ItemMeta itemMeta;
 
-	private bool added = false;
+	private bool isAdded = false;
+	private bool isSetForRemoval = false;
+
+	private readonly Color defaultColor = new Color32(255, 255, 255, 100);
+	private readonly Color selectedColor = new Color(0.5f, 1f, 0.6f, 0.8f);
 
 	private void Start() {
 		amount.onEndEdit.AddListener(OnInputFieldTextEntered);
@@ -33,30 +37,31 @@ public class ButtonBehaviour : MonoBehaviour {
 
 	#region ButtonPressEvents
 	private void OnInputFieldTextEntered(string value) {
-		button.image.color = new Color(0.5f, 1f, 0.6f, 0.8f);
+		button.image.color = selectedColor;
 		removeItem.gameObject.SetActive(true);
 	}
 
 	public void OnButtonPress() {
-		if (!added) {
-			button.image.color = new Color(0.5f, 1f, 0.6f, 0.8f);
+		if (!isAdded) {
+			button.image.color = selectedColor;
 			EventSystem.current.SetSelectedGameObject(amount.gameObject);
 			removeItem.gameObject.SetActive(true);
-			added = true;
+			isAdded = true;
 			Main.script.shopsScene.tcpManager.Add(itemMeta.item);
 		}
 	}
 
 	public void OnRemoveButton() {
-		button.image.color = new Color32(255, 255, 255, 100);
+		button.image.color = defaultColor;
 		removeItem.gameObject.SetActive(false);
 		amount.text = itemMeta.parsed.mostCommonAmount.ToString();
 		Main.script.shopsScene.tcpManager.Remove(itemMeta.item);
-		added = false;
+		isAdded = false;
 	}
 	#endregion
 
-	public void SetItemMeta(ItemMeta meta) {
+	public void SetItemMeta(ItemMeta meta, int arrayPosition) {
+		parsedArrayPosition = arrayPosition;
 		itemMeta = meta;
 		amount.text = meta.parsed.mostCommonAmount.ToString();
 		itemName.text = meta.item.name;

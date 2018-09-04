@@ -14,6 +14,7 @@ namespace Igor.Enums {
 			shopsDir = new DirectoryInfo(shopsPath);
 			FileInfo[] files = shopsDir.GetFiles("*.json");
 			for (int i = 0; i < files.Length; i++) {
+				
 				Add(files[i].Name.Replace(files[i].Extension, ""));
 			}
 		}
@@ -29,9 +30,9 @@ namespace Igor.Enums {
 
 		public void Add(string name) {
 			shopEntries.Add(name, shopEntries.Count);
-			JObject obj = JObject.Parse(Constants.jsonTemplate);
-			obj["shopName"] = name;
-			File.WriteAllText(shopsDir + "/" + name + ".json", obj.ToString());
+			//JObject obj = JObject.Parse(Constants.jsonTemplate);
+			//obj["shopName"] = name;
+			//File.WriteAllText(shopsDir + "/" + name + ".json", obj.ToString());
 		}
 
 		public void Remove(string name) {

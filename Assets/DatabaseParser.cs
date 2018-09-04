@@ -4,12 +4,27 @@ using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System.Collections.Generic;
 using Igor.Enums;
+using System.Linq;
 using static ItemDefinition;
 
 public class DatabaseParser {
 
 	public KeyValuePair<string,int> shopType { get; }
 	public event EventHandler<ShopEntry> OnShopEntryParsed;
+
+	public void RemoveItem(int index) {
+		JObject obj;
+		using (JsonTextReader reader = new JsonTextReader((File.OpenText(_persistentDataPathValueMainThread + "/Shops/" + shopType.Key + ".json")))) {
+			obj = JObject.Load(reader);
+		}
+		JArray array = (JArray)obj["items"];
+		array.Remove(array[index]);
+		using (JsonTextWriter writer = new JsonTextWriter(File.CreateText(_persistentDataPathValueMainThread + "/Shops/" + shopType.Key + ".json"))) {
+			obj["items"] = array;
+			obj.WriteTo(writer);
+		}
+		Parse();
+	}
 
 	private string _persistentDataPathValueMainThread;
 
@@ -56,8 +71,8 @@ public class DatabaseParser {
 public class ShopEntry {
 	[JsonProperty("entries")]
 	public int totalEntries { get; set; }
-	[JsonProperty("modified")]
-	public DateTime? modified { get; set; }
+	[JsonProperty("shopFileVersion")]
+	public string shopFileVersion { get; set; }
 	[JsonProperty("shopName")]
 	public string shopName { get; set; }
 	[JsonProperty("items")]

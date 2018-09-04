@@ -15,7 +15,7 @@ public class ButtonFunctions : MonoBehaviour {
 		Main.script.shopsScene.conn.SendData(new TCPData(new Item[] {
 			new Item("Testing stuff", 20),
 			new Item("Whatever", 100)
-		}));
+		},new PurchaseMeta(System.DateTime.Now,"Some shop", 10)));
 	}
 
 	public void SendInt64() {

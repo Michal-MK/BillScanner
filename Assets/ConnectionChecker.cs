@@ -1,13 +1,16 @@
-﻿using System.Threading;
+﻿using System;
+using System.Threading;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class ConnectionChecker : MonoBehaviour {
+	public event EventHandler<bool> OnConnectionChange;
 
 	public static ConnectionChecker instance;
-	public ConnectionCheckerThread thread;
+	private ConnectionCheckerThread thread;
 
-	private bool onlineStatus;
+	public bool onlineStatus { get; private set; }
+	private bool previousState;
 
 	public bool simulateMode;
 	public bool simulatedState;
@@ -38,6 +41,9 @@ public class ConnectionChecker : MonoBehaviour {
 	}
 
 	private void Update() {
+		if(onlineStatus != previousState) {
+			OnConnectionChange?.Invoke(this, onlineStatus);
+		}
 		if (onlineStatus) {
 			onlineImage.color = Color.green;
 			onlineText.text = "Online";
@@ -46,11 +52,12 @@ public class ConnectionChecker : MonoBehaviour {
 			onlineImage.color = Color.red;
 			onlineText.text = "Offline";
 		}
+		previousState = onlineStatus;
 	}
 }
 
-public class ConnectionCheckerThread {
-	public event System.EventHandler<bool> OnConnectedStatusUpdate;
+class ConnectionCheckerThread {
+	public event EventHandler<bool> OnConnectedStatusUpdate;
 
 	private bool _isOnline = false;
 
